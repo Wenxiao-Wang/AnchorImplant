@@ -10,13 +10,13 @@ AnchorImplant: Precise Mandibular Implant Pose Prediction via Anatomical-Anchore
 
 > Data Preprocessing
 ```
-nnUNetv2_plan_and_preprocess -d DATASET_ID --verify_dataset_integrity
+nnUNetv2_plan_and_preprocess -d DATASET_NAME_OR_ID --verify_dataset_integrity
 ```
 
 > Training
 ```
 nnUNetv2_train DATASET_NAME_OR_ID 3d_lowres 0 -tr nnUNetTrainer_fUNet
-nnUNetv2_train DATASET_NAME_OR_ID_lowres 1 -tr nnUNetTrainer_fUNet
+nnUNetv2_train DATASET_NAME_OR_ID 3d_lowres 1 -tr nnUNetTrainer_fUNet
 nnUNetv2_train DATASET_NAME_OR_ID 3d_lowres 2 -tr nnUNetTrainer_fUNet
 nnUNetv2_train DATASET_NAME_OR_ID 3d_lowres 3 -tr nnUNetTrainer_fUNet
 nnUNetv2_train DATASET_NAME_OR_ID 3d_lowres 4 -tr nnUNetTrainer_fUNet
