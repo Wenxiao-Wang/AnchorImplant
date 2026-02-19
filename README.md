@@ -31,3 +31,5 @@ nnUNetv2_find_best_configuration DATASET_NAME_OR_ID -c 3d_lowres -f 0 1 2 3 4 -t
 ```
 nnUNetv2_predict -i INPUT_FOLDER -o OUTPUT_FOLDER -d DATASET_NAME_OR_ID -c 3d_lowres -tr nnUNetTrainer_fUNet
 ```
+# Dataset
+To the tasks of IAN registration, implant transformation and generation, we collected 300 preoperative and postoperative CBCT scans(https://cbm.dhu.edu.cn/_upload/tpl/0e/ff/3839/template3839/page7_1_1.html). Specifically, all CBCT volumes were resampled to a uniform spacing of 0.5×0.5×0.5 mm
